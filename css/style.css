@@ -1798,11 +1798,19 @@ main {
     padding-bottom: 50px;
   }
 
-  .gallery__item._active .gallery__image {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+  @media (min-width:767px) {
+   .gallery__item._active .gallery__image {
+      -webkit-box-flex: 0;
+         -ms-flex: 0 1 100%;
+               flex: 0 1 100%;
+   }
+   
   }
+  @media (max-width:767px) {
+     .gallery__item {
+         flex: 0 1 100%;
+     }
+   }
 
   .gallery__item {
     cursor: pointer;
