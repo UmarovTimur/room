@@ -1309,7 +1309,9 @@ main {
   .header._header__scroll .header__down .header__logo {
     font-size: 31px;
   }
-
+  .gallery__image {
+      position: relative;
+   }
   .page__brand-subtitle {
     text-align: center;
   }
